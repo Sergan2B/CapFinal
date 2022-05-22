@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_for_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_rounded_for_image_product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_cap"
+            android:layout_width="67dp"
+            android:layout_height="44dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_cap" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_brand"
+        style="@style/TextBrandProductsRv"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="51dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_trash"
+        app:layout_constraintStart_toEndOf="@id/container_for_image"
+        app:layout_constraintTop_toTopOf="@id/container_for_image"
+        tools:text="New Era" />
+
+    <TextView
+        android:id="@+id/tv_model"
+        style="@style/TextModelProductsRv"
+        app:layout_constraintEnd_toEndOf="@id/tv_brand"
+        app:layout_constraintStart_toStartOf="@id/tv_brand"
+        app:layout_constraintTop_toBottomOf="@id/tv_brand"
+        tools:text="Golden State Warriors Icon 59FIFTY Fitted Cap" />
+
+    <ImageView
+        android:id="@+id/iv_trash"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_trash_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/TextPriceProductsRv"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="@id/tv_brand"
+        app:layout_constraintTop_toBottomOf="@id/tv_model"
+        tools:text="2500 сом" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/back_for_cart_count_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_trash">
+
+        <ImageView
+            android:id="@+id/iv_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_cart_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:background="@color/blue_cart_count_button"
+            android:fontFamily="@font/sf_ui_text_regular"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="3dp"
+            android:textColor="@color/blue_cart_count"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_plus"
+            app:layout_constraintStart_toEndOf="@id/iv_minus"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="0" />
+
+        <ImageView
+            android:id="@+id/iv_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_size"
+        style="@style/TextProductSize"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/tv_price"
+        app:layout_constraintTop_toBottomOf="@id/tv_price"
+        tools:text="S" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
