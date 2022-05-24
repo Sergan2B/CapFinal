@@ -23,5 +23,7 @@
     <color name="custom_black_30percent">#4D12121D</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="custom_gray_3">#565656</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="blue">#2566AF</color>
 
 </resources>
