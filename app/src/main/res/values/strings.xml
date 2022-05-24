@@ -23,4 +23,6 @@
     <string name="see_all">Смотреть все</string>
     <string name="stocks">Акции</string>
     <string name="favourites">Избранное</string>
+    <string name="text_new_password">Введите новый пароль</string>
+    <string name="text_agree_password">Подтвердите новый пароль</string>
 </resources>

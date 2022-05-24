@@ -4,7 +4,7 @@
     <style name="TextViewRegistration">
         <item name="android:layout_marginTop">@dimen/text_registration_margin</item>
         <item name="android:fontFamily">@font/sf_ui_text_bold</item>
-        <item name="android:textSize">@dimen/size_biggest</item>
+        <item name="android:textSize">@dimen/size_biggest_28sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
