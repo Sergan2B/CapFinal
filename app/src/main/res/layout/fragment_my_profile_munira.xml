@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ellipse"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/ellipse"/>
+
+    <TextView
+        android:id="@+id/prof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginStart="21dp"
+       app:layout_constraintTop_toBottomOf="@+id/ellipse"
+        android:layout_marginEnd="103dp"
+        android:text="Профиль"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/im_prof"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prof" />
+
+    <TextView
+        android:id="@+id/t_prof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="42dp"
+        android:text="Izat Bekboev"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prof" />
+
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/yellow_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_prof" />
+
+    <ImageView
+        android:id="@+id/img_number"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/yellow_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_mail" />
+
+    <ImageView
+        android:id="@+id/img_addres"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/yellow_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_number" />
+
+    <TextView
+        android:id="@+id/email"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ibekboev@gmail.com"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/t_prof" />
+
+    <TextView
+        android:id="@+id/numb"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="36dp"
+        android:text="+996755999820"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/addreses"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="36dp"
+        android:text="Адрес"
+        app:layout_constraintTop_toBottomOf="@+id/numb" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="317dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FDD816"
+        android:text="Редактировать профиль"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addreses"
+        android:layout_marginTop="123dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

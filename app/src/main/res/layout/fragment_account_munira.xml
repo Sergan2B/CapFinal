@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/myAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Мой аккаунт"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="21dp"
+        android:textSize="@dimen/size_biggest_28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/yellow_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myAcc" />
+
+    <ImageView
+        android:id="@+id/img_order"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="23dp"
+        android:src="@drawable/yellow_bag"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile" />
+
+    <ImageView
+        android:id="@+id/img_address"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="23dp"
+        android:src="@drawable/yellow_location"
+        app:layout_constraintTop_toBottomOf="@+id/myOrder" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Профиль"
+        android:layout_marginLeft="65dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/myAcc"
+        style="@style/text" />
+
+
+    <TextView
+        android:id="@+id/myOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Мои заказы"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        style="@style/text" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Адрес"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/myOrder"
+        style="@style/text" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

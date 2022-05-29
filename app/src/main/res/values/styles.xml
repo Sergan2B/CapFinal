@@ -4,7 +4,7 @@
     <style name="TextViewRegistration">
         <item name="android:layout_marginTop">@dimen/text_registration_margin</item>
         <item name="android:fontFamily">@font/sf_ui_text_bold</item>
-        <item name="android:textSize">@dimen/size_biggest</item>
+        <item name="android:textSize">@dimen/size_biggest_28sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
@@ -89,5 +89,13 @@
         <item name="android:textSize">16sp</item>
         <item name="cornerRadius">60dp</item>
     </style>
+
+    <style name="text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="profile"></style>
 
 </resources>
