@@ -20,7 +20,9 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/register_frag_mar_hor"
         android:layout_marginTop="@dimen/register_frag_mar_top"
+        android:layout_marginBottom="@dimen/tv_login_mar_start"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/custom_cap">
@@ -177,8 +179,7 @@
                         android:background="@drawable/logo_facebook" />
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    style="@style/CardViewStyle">
+                <androidx.cardview.widget.CardView style="@style/CardViewStyle">
 
                     <Button
                         android:id="@+id/btn_google"
@@ -191,7 +192,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ll_login_register"
+            android:id="@+id/ll_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/ll_register_margin_top"

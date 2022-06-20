@@ -37,4 +37,7 @@
     <string name="cheap_ones_first">Сначала дешевые</string>
     <string name="expensive_first">Сначала дорогие</string>
     <string name="apply">Применить</string>
+    <string name="facebook_app_id">769300090922219</string>
+    <string name="fb_login_protocol_scheme">fb769300090922219</string>
+    <string name="facebook_client_token">30e4a068a013ff373d87e686efa6a4e6</string>
 </resources>
