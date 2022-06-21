@@ -23,4 +23,21 @@
     <string name="see_all">Смотреть все</string>
     <string name="stocks">Акции</string>
     <string name="favourites">Избранное</string>
+    <string name="register">Регистрация</string>
+    <string name="name">Имя</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="password">Пароль</string>
+    <string name="confirm_the_password">Подтвердить пароль</string>
+    <string name="do_you_have_account">Уже есть аккаунт?</string>
+    <string name="log_in">Войти</string>
+    <string name="or">или</string>
+    <string name="sort">Сортировка</string>
+    <string name="popular">Популярные</string>
+    <string name="new_products">Новинки</string>
+    <string name="cheap_ones_first">Сначала дешевые</string>
+    <string name="expensive_first">Сначала дорогие</string>
+    <string name="apply">Применить</string>
+    <string name="facebook_app_id">769300090922219</string>
+    <string name="fb_login_protocol_scheme">fb769300090922219</string>
+    <string name="facebook_client_token">30e4a068a013ff373d87e686efa6a4e6</string>
 </resources>

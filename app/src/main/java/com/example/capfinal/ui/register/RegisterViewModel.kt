@@ -1,4 +1,6 @@
 package com.example.capfinal.ui.register
 
-class RegisterViewModel {
+import com.example.capfinal.core.base.BaseViewModel
+
+class RegisterViewModel: BaseViewModel() {
 }

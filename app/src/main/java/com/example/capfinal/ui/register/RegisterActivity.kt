@@ -1,12 +1,18 @@
 package com.example.capfinal.ui.register
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import com.example.capfinal.core.base.BaseActivity
+import kg.geektech.finalprojectcustomcap.databinding.ActivityRegisterBinding
 
-class RegisterActivity : AppCompatActivity() {
+class RegisterActivity: BaseActivity<RegisterViewModel, ActivityRegisterBinding>() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
+    override fun inflateViewBinding(inflater: LayoutInflater): ActivityRegisterBinding {
+        return ActivityRegisterBinding.inflate(inflater)
     }
+
+    override fun initView() {
+    }
+
+    override val viewModel: RegisterViewModel = TODO()
 }
